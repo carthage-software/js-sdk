@@ -195,49 +195,49 @@ export interface LogManagementGetLogCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@type': LogManagementGetLogCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogCollection200ResponseTypeEnum;
     /**
      * Current page number.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@page': number;
+    'page': number;
     /**
      * Number of items per page.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@items_per_page': number;
+    'items_per_page': number;
     /**
      * Total number of items.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@total_items': number;
+    'total_items': number;
     /**
      * First item index.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@first': number;
+    'first': number;
     /**
      * Last item index.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@last': number;
+    'last': number;
     /**
      * Next page number, if available.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@next'?: number | null;
+    'next'?: number | null;
     /**
      * Previous page number, if available.
      * @type {number}
      * @memberof LogManagementGetLogCollection200Response
      */
-    '@previous'?: number | null;
+    'previous'?: number | null;
     /**
      * Array of LogResource.
      * @type {Array<LogManagementGetLogCollection200ResponseItemsInner>}
@@ -260,13 +260,13 @@ export interface LogManagementGetLogCollection200ResponseItemsInner {
      * @type {string}
      * @memberof LogManagementGetLogCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogCollection200ResponseItemsInnerTypeEnum;
     /**
      * Unique identity of the log.
      * @type {string}
      * @memberof LogManagementGetLogCollection200ResponseItemsInner
      */
-    '@identity': string;
+    'identity': string;
     /**
      * The namespace of the log.
      * @type {string}
@@ -366,49 +366,49 @@ export interface LogManagementGetLogEntryCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@type': LogManagementGetLogEntryCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogEntryCollection200ResponseTypeEnum;
     /**
      * Current page number.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@page': number;
+    'page': number;
     /**
      * Number of items per page.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@items_per_page': number;
+    'items_per_page': number;
     /**
      * Total number of items.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@total_items': number;
+    'total_items': number;
     /**
      * First item index.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@first': number;
+    'first': number;
     /**
      * Last item index.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@last': number;
+    'last': number;
     /**
      * Next page number, if available.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@next'?: number | null;
+    'next'?: number | null;
     /**
      * Previous page number, if available.
      * @type {number}
      * @memberof LogManagementGetLogEntryCollection200Response
      */
-    '@previous'?: number | null;
+    'previous'?: number | null;
     /**
      * Array of LogEntryResource.
      * @type {Array<LogManagementGetLogEntryCollection200ResponseItemsInner>}
@@ -431,13 +431,13 @@ export interface LogManagementGetLogEntryCollection200ResponseItemsInner {
      * @type {string}
      * @memberof LogManagementGetLogEntryCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogEntryCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogEntryCollection200ResponseItemsInnerTypeEnum;
     /**
      * Unique identity of the log entry.
      * @type {string}
      * @memberof LogManagementGetLogEntryCollection200ResponseItemsInner
      */
-    '@identity': string;
+    'identity': string;
     /**
      * Identity of the associated log.
      * @type {string}
@@ -506,7 +506,7 @@ export interface LogManagementGetLogEntryFrequencyCountCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogEntryFrequencyCountCollection200Response
      */
-    '@type': LogManagementGetLogEntryFrequencyCountCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogEntryFrequencyCountCollection200ResponseTypeEnum;
     /**
      * Array of LogEntryFrequencyCountResource.
      * @type {Array<LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInner>}
@@ -529,7 +529,7 @@ export interface LogManagementGetLogEntryFrequencyCountCollection200ResponseItem
      * @type {string}
      * @memberof LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInnerTypeEnum;
     /**
      * Date associated with the frequency count.
      * @type {string}
@@ -558,7 +558,7 @@ export interface LogManagementGetLogEntrySourceCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogEntrySourceCollection200Response
      */
-    '@type': LogManagementGetLogEntrySourceCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogEntrySourceCollection200ResponseTypeEnum;
     /**
      * Array of LogEntrySourceResource.
      * @type {Array<LogManagementGetLogEntrySourceCollection200ResponseItemsInner>}
@@ -581,7 +581,7 @@ export interface LogManagementGetLogEntrySourceCollection200ResponseItemsInner {
      * @type {string}
      * @memberof LogManagementGetLogEntrySourceCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogEntrySourceCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogEntrySourceCollection200ResponseItemsInnerTypeEnum;
     /**
      * Source of the log entry.
      * @type {string}
@@ -604,7 +604,7 @@ export interface LogManagementGetLogEntrySourceFrequencyCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogEntrySourceFrequencyCollection200Response
      */
-    '@type': LogManagementGetLogEntrySourceFrequencyCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogEntrySourceFrequencyCollection200ResponseTypeEnum;
     /**
      * Array of LogEntrySourceFrequencyResource.
      * @type {Array<LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInner>}
@@ -627,7 +627,7 @@ export interface LogManagementGetLogEntrySourceFrequencyCollection200ResponseIte
      * @type {string}
      * @memberof LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInnerTypeEnum;
     /**
      * Source associated with the frequency count.
      * @type {string}
@@ -662,7 +662,7 @@ export interface LogManagementGetLogEntryTagCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogEntryTagCollection200Response
      */
-    '@type': LogManagementGetLogEntryTagCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogEntryTagCollection200ResponseTypeEnum;
     /**
      * Array of LogEntryTagResource.
      * @type {Array<LogManagementGetLogEntryTagCollection200ResponseItemsInner>}
@@ -685,7 +685,7 @@ export interface LogManagementGetLogEntryTagCollection200ResponseItemsInner {
      * @type {string}
      * @memberof LogManagementGetLogEntryTagCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogEntryTagCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogEntryTagCollection200ResponseItemsInnerTypeEnum;
     /**
      * Tag of the log entry.
      * @type {string}
@@ -708,7 +708,7 @@ export interface LogManagementGetLogEntryTagDistributionCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogEntryTagDistributionCollection200Response
      */
-    '@type': LogManagementGetLogEntryTagDistributionCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogEntryTagDistributionCollection200ResponseTypeEnum;
     /**
      * Array of LogEntryTagDistributionResource.
      * @type {Array<LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInner>}
@@ -731,7 +731,7 @@ export interface LogManagementGetLogEntryTagDistributionCollection200ResponseIte
      * @type {string}
      * @memberof LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInnerTypeEnum;
     /**
      * Tag associated with the distribution.
      * @type {string}
@@ -760,7 +760,7 @@ export interface LogManagementGetLogFrequencyCountCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogFrequencyCountCollection200Response
      */
-    '@type': LogManagementGetLogFrequencyCountCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogFrequencyCountCollection200ResponseTypeEnum;
     /**
      * Array of LogFrequencyCountResource.
      * @type {Array<LogManagementGetLogFrequencyCountCollection200ResponseItemsInner>}
@@ -783,7 +783,7 @@ export interface LogManagementGetLogFrequencyCountCollection200ResponseItemsInne
      * @type {string}
      * @memberof LogManagementGetLogFrequencyCountCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogFrequencyCountCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogFrequencyCountCollection200ResponseItemsInnerTypeEnum;
     /**
      * Date associated with the frequency count.
      * @type {string}
@@ -812,7 +812,7 @@ export interface LogManagementGetLogLevelStatisticsCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogLevelStatisticsCollection200Response
      */
-    '@type': LogManagementGetLogLevelStatisticsCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogLevelStatisticsCollection200ResponseTypeEnum;
     /**
      * Array of LogLevelStatisticsResource.
      * @type {Array<LogManagementGetLogLevelStatisticsCollection200ResponseItemsInner>}
@@ -835,7 +835,7 @@ export interface LogManagementGetLogLevelStatisticsCollection200ResponseItemsInn
      * @type {string}
      * @memberof LogManagementGetLogLevelStatisticsCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerTypeEnum;
     /**
      *
      * @type {LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerLevel}
@@ -911,7 +911,7 @@ export interface LogManagementGetLogNamespaceCollection200Response {
      * @type {string}
      * @memberof LogManagementGetLogNamespaceCollection200Response
      */
-    '@type': LogManagementGetLogNamespaceCollection200ResponseTypeEnum;
+    'type': LogManagementGetLogNamespaceCollection200ResponseTypeEnum;
     /**
      * Array of LogNamespaceResource.
      * @type {Array<LogManagementGetLogNamespaceCollection200ResponseItemsInner>}
@@ -934,7 +934,7 @@ export interface LogManagementGetLogNamespaceCollection200ResponseItemsInner {
      * @type {string}
      * @memberof LogManagementGetLogNamespaceCollection200ResponseItemsInner
      */
-    '@type': LogManagementGetLogNamespaceCollection200ResponseItemsInnerTypeEnum;
+    'type': LogManagementGetLogNamespaceCollection200ResponseItemsInnerTypeEnum;
     /**
      * Namespace of the log.
      * @type {string}
@@ -1110,13 +1110,13 @@ export interface LogManagementLogLogEntryResource {
      * @type {string}
      * @memberof LogManagementLogLogEntryResource
      */
-    '@type': LogManagementLogLogEntryResourceTypeEnum;
+    'type': LogManagementLogLogEntryResourceTypeEnum;
     /**
      * Unique identity of the log entry.
      * @type {string}
      * @memberof LogManagementLogLogEntryResource
      */
-    '@identity': string;
+    'identity': string;
     /**
      * Identity of the associated log.
      * @type {string}
@@ -1185,49 +1185,49 @@ export interface LogManagementLogLogEntryResourcePaginatedCollectionResource {
      * @type {string}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@type': LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum;
+    'type': LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum;
     /**
      * Current page number.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@page': number;
+    'page': number;
     /**
      * Number of items per page.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@items_per_page': number;
+    'items_per_page': number;
     /**
      * Total number of items.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@total_items': number;
+    'total_items': number;
     /**
      * First item index.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@first': number;
+    'first': number;
     /**
      * Last item index.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@last': number;
+    'last': number;
     /**
      * Next page number, if available.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@next'?: number | null;
+    'next'?: number | null;
     /**
      * Previous page number, if available.
      * @type {number}
      * @memberof LogManagementLogLogEntryResourcePaginatedCollectionResource
      */
-    '@previous'?: number | null;
+    'previous'?: number | null;
     /**
      * Array of LogEntryResource.
      * @type {Array<LogManagementGetLogEntryCollection200ResponseItemsInner>}
@@ -1250,7 +1250,7 @@ export interface LogManagementLogLogEntrySourceResource {
      * @type {string}
      * @memberof LogManagementLogLogEntrySourceResource
      */
-    '@type': LogManagementLogLogEntrySourceResourceTypeEnum;
+    'type': LogManagementLogLogEntrySourceResourceTypeEnum;
     /**
      * Source of the log entry.
      * @type {string}
@@ -1273,7 +1273,7 @@ export interface LogManagementLogLogEntrySourceResourceCollectionResource {
      * @type {string}
      * @memberof LogManagementLogLogEntrySourceResourceCollectionResource
      */
-    '@type': LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum;
     /**
      * Array of LogEntrySourceResource.
      * @type {Array<LogManagementGetLogEntrySourceCollection200ResponseItemsInner>}
@@ -1296,7 +1296,7 @@ export interface LogManagementLogLogEntryTagResource {
      * @type {string}
      * @memberof LogManagementLogLogEntryTagResource
      */
-    '@type': LogManagementLogLogEntryTagResourceTypeEnum;
+    'type': LogManagementLogLogEntryTagResourceTypeEnum;
     /**
      * Tag of the log entry.
      * @type {string}
@@ -1319,7 +1319,7 @@ export interface LogManagementLogLogEntryTagResourceCollectionResource {
      * @type {string}
      * @memberof LogManagementLogLogEntryTagResourceCollectionResource
      */
-    '@type': LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum;
     /**
      * Array of LogEntryTagResource.
      * @type {Array<LogManagementGetLogEntryTagCollection200ResponseItemsInner>}
@@ -1365,7 +1365,7 @@ export interface LogManagementLogLogNamespaceResource {
      * @type {string}
      * @memberof LogManagementLogLogNamespaceResource
      */
-    '@type': LogManagementLogLogNamespaceResourceTypeEnum;
+    'type': LogManagementLogLogNamespaceResourceTypeEnum;
     /**
      * Namespace of the log.
      * @type {string}
@@ -1388,7 +1388,7 @@ export interface LogManagementLogLogNamespaceResourceCollectionResource {
      * @type {string}
      * @memberof LogManagementLogLogNamespaceResourceCollectionResource
      */
-    '@type': LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum;
     /**
      * Array of LogNamespaceResource.
      * @type {Array<LogManagementGetLogNamespaceCollection200ResponseItemsInner>}
@@ -1411,13 +1411,13 @@ export interface LogManagementLogLogResource {
      * @type {string}
      * @memberof LogManagementLogLogResource
      */
-    '@type': LogManagementLogLogResourceTypeEnum;
+    'type': LogManagementLogLogResourceTypeEnum;
     /**
      * Unique identity of the log.
      * @type {string}
      * @memberof LogManagementLogLogResource
      */
-    '@identity': string;
+    'identity': string;
     /**
      * The namespace of the log.
      * @type {string}
@@ -1476,49 +1476,49 @@ export interface LogManagementLogLogResourcePaginatedCollectionResource {
      * @type {string}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@type': LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum;
+    'type': LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum;
     /**
      * Current page number.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@page': number;
+    'page': number;
     /**
      * Number of items per page.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@items_per_page': number;
+    'items_per_page': number;
     /**
      * Total number of items.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@total_items': number;
+    'total_items': number;
     /**
      * First item index.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@first': number;
+    'first': number;
     /**
      * Last item index.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@last': number;
+    'last': number;
     /**
      * Next page number, if available.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@next'?: number | null;
+    'next'?: number | null;
     /**
      * Previous page number, if available.
      * @type {number}
      * @memberof LogManagementLogLogResourcePaginatedCollectionResource
      */
-    '@previous'?: number | null;
+    'previous'?: number | null;
     /**
      * Array of LogResource.
      * @type {Array<LogManagementGetLogCollection200ResponseItemsInner>}
@@ -1555,7 +1555,7 @@ export interface LogManagementLogStatisticsLogEntryFrequencyCountResource {
      * @type {string}
      * @memberof LogManagementLogStatisticsLogEntryFrequencyCountResource
      */
-    '@type': LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum;
     /**
      * Date associated with the frequency count.
      * @type {string}
@@ -1584,7 +1584,7 @@ export interface LogManagementLogStatisticsLogEntryFrequencyCountResourceCollect
      * @type {string}
      * @memberof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResource
      */
-    '@type': LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum;
     /**
      * Array of LogEntryFrequencyCountResource.
      * @type {Array<LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInner>}
@@ -1607,7 +1607,7 @@ export interface LogManagementLogStatisticsLogEntrySourceFrequencyResource {
      * @type {string}
      * @memberof LogManagementLogStatisticsLogEntrySourceFrequencyResource
      */
-    '@type': LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum;
     /**
      * Source associated with the frequency count.
      * @type {string}
@@ -1642,7 +1642,7 @@ export interface LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollec
      * @type {string}
      * @memberof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource
      */
-    '@type': LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum;
     /**
      * Array of LogEntrySourceFrequencyResource.
      * @type {Array<LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInner>}
@@ -1665,7 +1665,7 @@ export interface LogManagementLogStatisticsLogEntryTagDistributionResource {
      * @type {string}
      * @memberof LogManagementLogStatisticsLogEntryTagDistributionResource
      */
-    '@type': LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum;
     /**
      * Tag associated with the distribution.
      * @type {string}
@@ -1694,7 +1694,7 @@ export interface LogManagementLogStatisticsLogEntryTagDistributionResourceCollec
      * @type {string}
      * @memberof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource
      */
-    '@type': LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum;
     /**
      * Array of LogEntryTagDistributionResource.
      * @type {Array<LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInner>}
@@ -1717,7 +1717,7 @@ export interface LogManagementLogStatisticsLogFrequencyCountResource {
      * @type {string}
      * @memberof LogManagementLogStatisticsLogFrequencyCountResource
      */
-    '@type': LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum;
     /**
      * Date associated with the frequency count.
      * @type {string}
@@ -1746,7 +1746,7 @@ export interface LogManagementLogStatisticsLogFrequencyCountResourceCollectionRe
      * @type {string}
      * @memberof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResource
      */
-    '@type': LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum;
     /**
      * Array of LogFrequencyCountResource.
      * @type {Array<LogManagementGetLogFrequencyCountCollection200ResponseItemsInner>}
@@ -1769,7 +1769,7 @@ export interface LogManagementLogStatisticsLogLevelStatisticsResource {
      * @type {string}
      * @memberof LogManagementLogStatisticsLogLevelStatisticsResource
      */
-    '@type': LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum;
     /**
      *
      * @type {LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerLevel}
@@ -1804,7 +1804,7 @@ export interface LogManagementLogStatisticsLogLevelStatisticsResourceCollectionR
      * @type {string}
      * @memberof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource
      */
-    '@type': LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum;
     /**
      * Array of LogLevelStatisticsResource.
      * @type {Array<LogManagementGetLogLevelStatisticsCollection200ResponseItemsInner>}
@@ -1827,7 +1827,7 @@ export interface Ping200Response {
      * @type {string}
      * @memberof Ping200Response
      */
-    '@type': Ping200ResponseTypeEnum;
+    'type': Ping200ResponseTypeEnum;
     /**
      * A random quote from Hannibal, The Carthaginian General.
      * @type {string}
@@ -1856,7 +1856,7 @@ export interface SharedPingResource {
      * @type {string}
      * @memberof SharedPingResource
      */
-    '@type': SharedPingResourceTypeEnum;
+    'type': SharedPingResourceTypeEnum;
     /**
      * A random quote from Hannibal, The Carthaginian General.
      * @type {string}
