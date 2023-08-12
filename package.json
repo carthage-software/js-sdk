@@ -1,0 +1,30 @@
+{
+  "name": "@carthage-software/js-sdk",
+  "version": "0.0.0",
+  "description": "Carthage Software Development Kit for JavaScript/TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "codegen": "rm -rf src/generated; openapi-generator-cli generate -i ./server/open-api.json -o src/generated -g typescript-axios --additional-properties=disallowAdditionalPropertiesIfNotPresent,supportsES6,useSingleRequestParameter; rm -rf src/generated/.openapi-generator src/generated/.gitignore src/generated/.npmignore src/generated/.openapi-generator-ignore src/generated/git_push.sh",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carthage-software/js-sdk.git"
+  },
+  "author": "Saif Eddin Gmati <azjezz@protonmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/carthage-software/js-sdk/issues"
+  },
+  "homepage": "https://github.com/carthage-software/js-sdk#readme",
+  "dependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
