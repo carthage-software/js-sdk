@@ -23,12 +23,7 @@ import Carthage from '@carthage-software/js-sdk';
 
 async function main() {
     let configuration = new Carthage.Configuration({
-        basePath: 'https://localhost',
-        baseOptions: {
-            httpsAgent: new (require('https').Agent)({
-                rejectUnauthorized: false
-            })
-        }
+        basePath: 'https://my-carthage-server.example.com',
     });
 
     let sharedApi = new Carthage.SharedApi(configuration);
@@ -50,12 +45,7 @@ import Carthage from '@carthage-software/js-sdk';
 
 async function main() {
     let configuration = new Carthage.Configuration({
-        basePath: 'https://localhost',
-        baseOptions: {
-            httpsAgent: new (require('https').Agent)({
-                rejectUnauthorized: false
-            })
-        }
+        basePath: 'https://my-carthage-server.example.com',
     });
 
     let logManagementApi = new Carthage.LogManagementApi(configuration);
