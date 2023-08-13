@@ -16,124 +16,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsFrequency = exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceTypeEnum = exports.LogManagementLogLogFilterSortBy = exports.LogManagementLogLogFilterOrder = exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntryTagResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceTypeEnum = exports.LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogEntryResourceTypeEnum = exports.LogManagementLogLogEntryFilterOrder = exports.LogManagementLogCreateLogLevelEnum = exports.LogManagementGetLogNamespaceCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogNamespaceCollection200ResponseTypeEnum = exports.LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerLevelValueEnum = exports.LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerLevelNameEnum = exports.LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogLevelStatisticsCollection200ResponseTypeEnum = exports.LogManagementGetLogFrequencyCountCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogFrequencyCountCollection200ResponseTypeEnum = exports.LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogEntryTagDistributionCollection200ResponseTypeEnum = exports.LogManagementGetLogEntryTagCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogEntryTagCollection200ResponseTypeEnum = exports.LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogEntrySourceFrequencyCollection200ResponseTypeEnum = exports.LogManagementGetLogEntrySourceCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogEntrySourceCollection200ResponseTypeEnum = exports.LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogEntryFrequencyCountCollection200ResponseTypeEnum = exports.LogManagementGetLogEntryCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogEntryCollection200ResponseTypeEnum = exports.LogManagementGetLogCollection200ResponseItemsInnerLevelValueEnum = exports.LogManagementGetLogCollection200ResponseItemsInnerLevelNameEnum = exports.LogManagementGetLogCollection200ResponseItemsInnerTypeEnum = exports.LogManagementGetLogCollection200ResponseTypeEnum = exports.LogManagementCollectRequestCollectLogsInnerLogLevelEnum = void 0;
-exports.SharedApi = exports.SharedApiFactory = exports.SharedApiFp = exports.SharedApiAxiosParamCreator = exports.LogManagementApi = exports.LogManagementApiFactory = exports.LogManagementApiFp = exports.LogManagementApiAxiosParamCreator = exports.SharedPingResourceTypeEnum = exports.Ping200ResponseTypeEnum = void 0;
+exports.SharedApi = exports.SharedApiFactory = exports.SharedApiFp = exports.SharedApiAxiosParamCreator = exports.LogManagementApi = exports.LogManagementApiFactory = exports.LogManagementApiFp = exports.LogManagementApiAxiosParamCreator = exports.SharedPingResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsFrequency = exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogResourceLevelValueEnum = exports.LogManagementLogLogResourceLevelNameEnum = exports.LogManagementLogLogResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceTypeEnum = exports.LogManagementLogLogFilterSortBy = exports.LogManagementLogLogFilterOrder = exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntryTagResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceTypeEnum = exports.LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogEntryResourceTypeEnum = exports.LogManagementLogLogEntryFilterOrder = exports.LogManagementLogCreateLogLevelEnum = void 0;
 const axios_1 = __importDefault(require("axios"));
 // Some imports not used depending on template conditions
 // @ts-ignore
 const common_1 = require("./common");
 // @ts-ignore
 const base_1 = require("./base");
-exports.LogManagementCollectRequestCollectLogsInnerLogLevelEnum = {
-    NUMBER_100: 100,
-    NUMBER_200: 200,
-    NUMBER_250: 250,
-    NUMBER_300: 300,
-    NUMBER_400: 400,
-    NUMBER_500: 500,
-    NUMBER_550: 550,
-    NUMBER_600: 600
-};
-exports.LogManagementGetLogCollection200ResponseTypeEnum = {
-    PaginatedCollection: 'paginated_collection'
-};
-exports.LogManagementGetLogCollection200ResponseItemsInnerTypeEnum = {
-    Log: 'log'
-};
-exports.LogManagementGetLogCollection200ResponseItemsInnerLevelNameEnum = {
-    Debug: 'Debug',
-    Info: 'Info',
-    Notice: 'Notice',
-    Warning: 'Warning',
-    Error: 'Error',
-    Critical: 'Critical',
-    Alert: 'Alert',
-    Emergency: 'Emergency'
-};
-exports.LogManagementGetLogCollection200ResponseItemsInnerLevelValueEnum = {
-    NUMBER_100: 100,
-    NUMBER_200: 200,
-    NUMBER_250: 250,
-    NUMBER_300: 300,
-    NUMBER_400: 400,
-    NUMBER_500: 500,
-    NUMBER_550: 550,
-    NUMBER_600: 600
-};
-exports.LogManagementGetLogEntryCollection200ResponseTypeEnum = {
-    PaginatedCollection: 'paginated_collection'
-};
-exports.LogManagementGetLogEntryCollection200ResponseItemsInnerTypeEnum = {
-    LogEntry: 'log_entry'
-};
-exports.LogManagementGetLogEntryFrequencyCountCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogEntryFrequencyCountCollection200ResponseItemsInnerTypeEnum = {
-    LogEntryFrequencyCount: 'log_entry_frequency_count'
-};
-exports.LogManagementGetLogEntrySourceCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogEntrySourceCollection200ResponseItemsInnerTypeEnum = {
-    LogEntrySource: 'log_entry_source'
-};
-exports.LogManagementGetLogEntrySourceFrequencyCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogEntrySourceFrequencyCollection200ResponseItemsInnerTypeEnum = {
-    LogEntrySourceFrequency: 'log_entry_source_frequency'
-};
-exports.LogManagementGetLogEntryTagCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogEntryTagCollection200ResponseItemsInnerTypeEnum = {
-    LogEntryTag: 'log_entry_tag'
-};
-exports.LogManagementGetLogEntryTagDistributionCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogEntryTagDistributionCollection200ResponseItemsInnerTypeEnum = {
-    LogEntryTagDistribution: 'log_entry_tag_distribution'
-};
-exports.LogManagementGetLogFrequencyCountCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogFrequencyCountCollection200ResponseItemsInnerTypeEnum = {
-    LogFrequencyCount: 'log_frequency_count'
-};
-exports.LogManagementGetLogLevelStatisticsCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerTypeEnum = {
-    LogLevelStatistics: 'log_level_statistics'
-};
-exports.LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerLevelNameEnum = {
-    Debug: 'Debug',
-    Info: 'Info',
-    Notice: 'Notice',
-    Warning: 'Warning',
-    Error: 'Error',
-    Critical: 'Critical',
-    Alert: 'Alert',
-    Emergency: 'Emergency'
-};
-exports.LogManagementGetLogLevelStatisticsCollection200ResponseItemsInnerLevelValueEnum = {
-    NUMBER_100: 100,
-    NUMBER_200: 200,
-    NUMBER_250: 250,
-    NUMBER_300: 300,
-    NUMBER_400: 400,
-    NUMBER_500: 500,
-    NUMBER_550: 550,
-    NUMBER_600: 600
-};
-exports.LogManagementGetLogNamespaceCollection200ResponseTypeEnum = {
-    SimpleCollection: 'simple_collection'
-};
-exports.LogManagementGetLogNamespaceCollection200ResponseItemsInnerTypeEnum = {
-    LogNamespace: 'log_namespace'
-};
 exports.LogManagementLogCreateLogLevelEnum = {
     NUMBER_100: 100,
     NUMBER_200: 200,
@@ -201,6 +90,26 @@ exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = {
 exports.LogManagementLogLogResourceTypeEnum = {
     Log: 'log'
 };
+exports.LogManagementLogLogResourceLevelNameEnum = {
+    Debug: 'Debug',
+    Info: 'Info',
+    Notice: 'Notice',
+    Warning: 'Warning',
+    Error: 'Error',
+    Critical: 'Critical',
+    Alert: 'Alert',
+    Emergency: 'Emergency'
+};
+exports.LogManagementLogLogResourceLevelValueEnum = {
+    NUMBER_100: 100,
+    NUMBER_200: 200,
+    NUMBER_250: 250,
+    NUMBER_300: 300,
+    NUMBER_400: 400,
+    NUMBER_500: 500,
+    NUMBER_550: 550,
+    NUMBER_600: 600
+};
 exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = {
     PaginatedCollection: 'paginated_collection'
 };
@@ -247,8 +156,25 @@ exports.LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = {
 exports.LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = {
     SimpleCollection: 'simple_collection'
 };
-exports.Ping200ResponseTypeEnum = {
-    Ping: 'ping'
+exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = {
+    Debug: 'Debug',
+    Info: 'Info',
+    Notice: 'Notice',
+    Warning: 'Warning',
+    Error: 'Error',
+    Critical: 'Critical',
+    Alert: 'Alert',
+    Emergency: 'Emergency'
+};
+exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum = {
+    NUMBER_100: 100,
+    NUMBER_200: 200,
+    NUMBER_250: 250,
+    NUMBER_300: 300,
+    NUMBER_400: 400,
+    NUMBER_500: 500,
+    NUMBER_550: 550,
+    NUMBER_600: 600
 };
 exports.SharedPingResourceTypeEnum = {
     Ping: 'ping'
@@ -290,11 +216,11 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Collect log entries from a log.
          * @summary Collect Log Entries
-         * @param {LogManagementCollectRequestCollectLogsInner} [logManagementCollectRequestCollectLogsInner]
+         * @param {LogManagementLogCollectLog} [logManagementLogCollectLog]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementCollectLog: async (logManagementCollectRequestCollectLogsInner, options = {}) => {
+        logManagementCollectLog: async (logManagementLogCollectLog, options = {}) => {
             const localVarPath = `/log-management/log/collect`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
@@ -309,7 +235,7 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
             (0, common_1.setSearchParams)(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = { ...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers };
-            localVarRequestOptions.data = (0, common_1.serializeDataIfNeeded)(logManagementCollectRequestCollectLogsInner, localVarRequestOptions, configuration);
+            localVarRequestOptions.data = (0, common_1.serializeDataIfNeeded)(logManagementLogCollectLog, localVarRequestOptions, configuration);
             return {
                 url: (0, common_1.toPathString)(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -318,11 +244,11 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new log.
          * @summary Create Log
-         * @param {LogManagementCollectRequestCollectLogsInnerLog} [logManagementCollectRequestCollectLogsInnerLog]
+         * @param {LogManagementLogCreateLog} [logManagementLogCreateLog]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementCreateLog: async (logManagementCollectRequestCollectLogsInnerLog, options = {}) => {
+        logManagementCreateLog: async (logManagementLogCreateLog, options = {}) => {
             const localVarPath = `/log-management/log`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
@@ -337,7 +263,7 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
             (0, common_1.setSearchParams)(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = { ...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers };
-            localVarRequestOptions.data = (0, common_1.serializeDataIfNeeded)(logManagementCollectRequestCollectLogsInnerLog, localVarRequestOptions, configuration);
+            localVarRequestOptions.data = (0, common_1.serializeDataIfNeeded)(logManagementLogCreateLog, localVarRequestOptions, configuration);
             return {
                 url: (0, common_1.toPathString)(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -346,11 +272,11 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Create a new log entry.
          * @summary Create Log Entry
-         * @param {LogManagementCreateLogEntryRequest} [logManagementCreateLogEntryRequest]
+         * @param {LogManagementLogCreateLogEntry} [logManagementLogCreateLogEntry]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementCreateLogEntry: async (logManagementCreateLogEntryRequest, options = {}) => {
+        logManagementCreateLogEntry: async (logManagementLogCreateLogEntry, options = {}) => {
             const localVarPath = `/log-management/log/entry`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
@@ -365,7 +291,7 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
             (0, common_1.setSearchParams)(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = { ...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers };
-            localVarRequestOptions.data = (0, common_1.serializeDataIfNeeded)(logManagementCreateLogEntryRequest, localVarRequestOptions, configuration);
+            localVarRequestOptions.data = (0, common_1.serializeDataIfNeeded)(logManagementLogCreateLogEntry, localVarRequestOptions, configuration);
             return {
                 url: (0, common_1.toPathString)(localVarUrlObj),
                 options: localVarRequestOptions,
@@ -461,18 +387,18 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Retrieve a collection of logs.
          * @summary Get Log Collection
-         * @param {number} [page] The page number for pagination. Defaults to 1.
-         * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
          * @param {string} [contains]
+         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
          * @param {string} [from]
          * @param {string} [to]
-         * @param {'ASC' | 'DESC'} [order]
-         * @param {'createdAt' | 'updatedAt' | 'firstEntryOccurredAt' | 'lastEntryOccurredAt' | 'level'} [sortBy]
+         * @param {LogManagementLogLogFilterSortBy} [sortBy]
+         * @param {LogManagementLogLogFilterOrder} [order]
+         * @param {number} [page] The page number for pagination. Defaults to 1.
+         * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogCollection: async (page, itemsPerPage, levels, contains, from, to, order, sortBy, options = {}) => {
+        logManagementGetLogCollection: async (contains, levels, from, to, sortBy, order, page, itemsPerPage, options = {}) => {
             const localVarPath = `/log-management/log`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
@@ -483,17 +409,11 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
             const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options };
             const localVarHeaderParameter = {};
             const localVarQueryParameter = {};
-            if (page !== undefined) {
-                localVarQueryParameter['page'] = page;
-            }
-            if (itemsPerPage !== undefined) {
-                localVarQueryParameter['items_per_page'] = itemsPerPage;
+            if (contains !== undefined) {
+                localVarQueryParameter['contains'] = contains;
             }
             if (levels) {
                 localVarQueryParameter['levels[]'] = levels;
-            }
-            if (contains !== undefined) {
-                localVarQueryParameter['contains'] = contains;
             }
             if (from !== undefined) {
                 localVarQueryParameter['from'] = (from instanceof Date) ?
@@ -505,11 +425,17 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
                     to.toISOString() :
                     to;
             }
+            if (sortBy !== undefined) {
+                localVarQueryParameter['sort_by'] = sortBy;
+            }
             if (order !== undefined) {
                 localVarQueryParameter['order'] = order;
             }
-            if (sortBy !== undefined) {
-                localVarQueryParameter['sort_by'] = sortBy;
+            if (page !== undefined) {
+                localVarQueryParameter['page'] = page;
+            }
+            if (itemsPerPage !== undefined) {
+                localVarQueryParameter['items_per_page'] = itemsPerPage;
             }
             (0, common_1.setSearchParams)(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -556,7 +482,7 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
          * @param {string} [logIdentity]
          * @param {string} [before]
          * @param {string} [after]
-         * @param {'ASC' | 'DESC'} [order]
+         * @param {LogManagementLogLogEntryFilterOrder} [order]
          * @param {string} [source]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -608,7 +534,7 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Get the frequency count of log entries.
          * @summary Get Log Entry Frequency Count
-         * @param {'yearly' | 'quarterly' | 'monthly' | 'weekly' | 'daily' | 'hourly'} frequency
+         * @param {LogManagementLogStatisticsFrequency} frequency
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -737,7 +663,7 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Get the frequency count of logs.
          * @summary Get Log Frequency Count
-         * @param {'yearly' | 'quarterly' | 'monthly' | 'weekly' | 'daily' | 'hourly'} frequency
+         * @param {LogManagementLogStatisticsFrequency} frequency
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -837,34 +763,34 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Collect log entries from a log.
          * @summary Collect Log Entries
-         * @param {LogManagementCollectRequestCollectLogsInner} [logManagementCollectRequestCollectLogsInner]
+         * @param {LogManagementLogCollectLog} [logManagementLogCollectLog]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementCollectLog(logManagementCollectRequestCollectLogsInner, options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementCollectLog(logManagementCollectRequestCollectLogsInner, options);
+        async logManagementCollectLog(logManagementLogCollectLog, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementCollectLog(logManagementLogCollectLog, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
          * Create a new log.
          * @summary Create Log
-         * @param {LogManagementCollectRequestCollectLogsInnerLog} [logManagementCollectRequestCollectLogsInnerLog]
+         * @param {LogManagementLogCreateLog} [logManagementLogCreateLog]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementCreateLog(logManagementCollectRequestCollectLogsInnerLog, options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementCreateLog(logManagementCollectRequestCollectLogsInnerLog, options);
+        async logManagementCreateLog(logManagementLogCreateLog, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementCreateLog(logManagementLogCreateLog, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
          * Create a new log entry.
          * @summary Create Log Entry
-         * @param {LogManagementCreateLogEntryRequest} [logManagementCreateLogEntryRequest]
+         * @param {LogManagementLogCreateLogEntry} [logManagementLogCreateLogEntry]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementCreateLogEntry(logManagementCreateLogEntryRequest, options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementCreateLogEntry(logManagementCreateLogEntryRequest, options);
+        async logManagementCreateLogEntry(logManagementLogCreateLogEntry, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementCreateLogEntry(logManagementLogCreateLogEntry, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
@@ -903,19 +829,19 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Retrieve a collection of logs.
          * @summary Get Log Collection
-         * @param {number} [page] The page number for pagination. Defaults to 1.
-         * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
          * @param {string} [contains]
+         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
          * @param {string} [from]
          * @param {string} [to]
-         * @param {'ASC' | 'DESC'} [order]
-         * @param {'createdAt' | 'updatedAt' | 'firstEntryOccurredAt' | 'lastEntryOccurredAt' | 'level'} [sortBy]
+         * @param {LogManagementLogLogFilterSortBy} [sortBy]
+         * @param {LogManagementLogLogFilterOrder} [order]
+         * @param {number} [page] The page number for pagination. Defaults to 1.
+         * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogCollection(page, itemsPerPage, levels, contains, from, to, order, sortBy, options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogCollection(page, itemsPerPage, levels, contains, from, to, order, sortBy, options);
+        async logManagementGetLogCollection(contains, levels, from, to, sortBy, order, page, itemsPerPage, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogCollection(contains, levels, from, to, sortBy, order, page, itemsPerPage, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
@@ -937,7 +863,7 @@ const LogManagementApiFp = function (configuration) {
          * @param {string} [logIdentity]
          * @param {string} [before]
          * @param {string} [after]
-         * @param {'ASC' | 'DESC'} [order]
+         * @param {LogManagementLogLogEntryFilterOrder} [order]
          * @param {string} [source]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -949,7 +875,7 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Get the frequency count of log entries.
          * @summary Get Log Entry Frequency Count
-         * @param {'yearly' | 'quarterly' | 'monthly' | 'weekly' | 'daily' | 'hourly'} frequency
+         * @param {LogManagementLogStatisticsFrequency} frequency
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1000,7 +926,7 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Get the frequency count of logs.
          * @summary Get Log Frequency Count
-         * @param {'yearly' | 'quarterly' | 'monthly' | 'weekly' | 'daily' | 'hourly'} frequency
+         * @param {LogManagementLogStatisticsFrequency} frequency
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1056,7 +982,7 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
          * @throws {RequiredError}
          */
         logManagementCollectLog(requestParameters = {}, options) {
-            return localVarFp.logManagementCollectLog(requestParameters.logManagementCollectRequestCollectLogsInner, options).then((request) => request(axios, basePath));
+            return localVarFp.logManagementCollectLog(requestParameters.logManagementLogCollectLog, options).then((request) => request(axios, basePath));
         },
         /**
          * Create a new log.
@@ -1066,7 +992,7 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
          * @throws {RequiredError}
          */
         logManagementCreateLog(requestParameters = {}, options) {
-            return localVarFp.logManagementCreateLog(requestParameters.logManagementCollectRequestCollectLogsInnerLog, options).then((request) => request(axios, basePath));
+            return localVarFp.logManagementCreateLog(requestParameters.logManagementLogCreateLog, options).then((request) => request(axios, basePath));
         },
         /**
          * Create a new log entry.
@@ -1076,7 +1002,7 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
          * @throws {RequiredError}
          */
         logManagementCreateLogEntry(requestParameters = {}, options) {
-            return localVarFp.logManagementCreateLogEntry(requestParameters.logManagementCreateLogEntryRequest, options).then((request) => request(axios, basePath));
+            return localVarFp.logManagementCreateLogEntry(requestParameters.logManagementLogCreateLogEntry, options).then((request) => request(axios, basePath));
         },
         /**
          * Delete a log by identity.
@@ -1116,7 +1042,7 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
          * @throws {RequiredError}
          */
         logManagementGetLogCollection(requestParameters = {}, options) {
-            return localVarFp.logManagementGetLogCollection(requestParameters.page, requestParameters.itemsPerPage, requestParameters.levels, requestParameters.contains, requestParameters.from, requestParameters.to, requestParameters.order, requestParameters.sortBy, options).then((request) => request(axios, basePath));
+            return localVarFp.logManagementGetLogCollection(requestParameters.contains, requestParameters.levels, requestParameters.from, requestParameters.to, requestParameters.sortBy, requestParameters.order, requestParameters.page, requestParameters.itemsPerPage, options).then((request) => request(axios, basePath));
         },
         /**
          * Get a log entry by its identity.
@@ -1242,7 +1168,7 @@ class LogManagementApi extends base_1.BaseAPI {
      * @memberof LogManagementApi
      */
     logManagementCollectLog(requestParameters = {}, options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementCollectLog(requestParameters.logManagementCollectRequestCollectLogsInner, options).then((request) => request(this.axios, this.basePath));
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementCollectLog(requestParameters.logManagementLogCollectLog, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Create a new log.
@@ -1253,7 +1179,7 @@ class LogManagementApi extends base_1.BaseAPI {
      * @memberof LogManagementApi
      */
     logManagementCreateLog(requestParameters = {}, options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementCreateLog(requestParameters.logManagementCollectRequestCollectLogsInnerLog, options).then((request) => request(this.axios, this.basePath));
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementCreateLog(requestParameters.logManagementLogCreateLog, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Create a new log entry.
@@ -1264,7 +1190,7 @@ class LogManagementApi extends base_1.BaseAPI {
      * @memberof LogManagementApi
      */
     logManagementCreateLogEntry(requestParameters = {}, options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementCreateLogEntry(requestParameters.logManagementCreateLogEntryRequest, options).then((request) => request(this.axios, this.basePath));
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementCreateLogEntry(requestParameters.logManagementLogCreateLogEntry, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Delete a log by identity.
@@ -1308,7 +1234,7 @@ class LogManagementApi extends base_1.BaseAPI {
      * @memberof LogManagementApi
      */
     logManagementGetLogCollection(requestParameters = {}, options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogCollection(requestParameters.page, requestParameters.itemsPerPage, requestParameters.levels, requestParameters.contains, requestParameters.from, requestParameters.to, requestParameters.order, requestParameters.sortBy, options).then((request) => request(this.axios, this.basePath));
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogCollection(requestParameters.contains, requestParameters.levels, requestParameters.from, requestParameters.to, requestParameters.sortBy, requestParameters.order, requestParameters.page, requestParameters.itemsPerPage, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Get a log entry by its identity.
