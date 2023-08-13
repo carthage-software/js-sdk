@@ -363,7 +363,7 @@ export interface LogManagementLogLogEntrySourceResourceCollectionResource {
     'items': Array<LogManagementLogLogEntrySourceResource>;
 }
 export declare const LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = typeof LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum];
 /**
@@ -409,7 +409,7 @@ export interface LogManagementLogLogEntryTagResourceCollectionResource {
     'items': Array<LogManagementLogLogEntryTagResource>;
 }
 export declare const LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = typeof LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum];
 /**
@@ -478,7 +478,7 @@ export interface LogManagementLogLogNamespaceResourceCollectionResource {
     'items': Array<LogManagementLogLogNamespaceResource>;
 }
 export declare const LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = typeof LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum];
 /**
@@ -715,7 +715,7 @@ export interface LogManagementLogStatisticsLogEntryFrequencyCountResourceCollect
     'items': Array<LogManagementLogStatisticsLogEntryFrequencyCountResource>;
 }
 export declare const LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum];
 /**
@@ -773,7 +773,7 @@ export interface LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollec
     'items': Array<LogManagementLogStatisticsLogEntrySourceFrequencyResource>;
 }
 export declare const LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum];
 /**
@@ -825,7 +825,7 @@ export interface LogManagementLogStatisticsLogEntryTagDistributionResourceCollec
     'items': Array<LogManagementLogStatisticsLogEntryTagDistributionResource>;
 }
 export declare const LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum];
 /**
@@ -877,7 +877,7 @@ export interface LogManagementLogStatisticsLogFrequencyCountResourceCollectionRe
     'items': Array<LogManagementLogStatisticsLogFrequencyCountResource>;
 }
 export declare const LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum];
 /**
@@ -935,7 +935,7 @@ export interface LogManagementLogStatisticsLogLevelStatisticsResourceCollectionR
     'items': Array<LogManagementLogStatisticsLogLevelStatisticsResource>;
 }
 export declare const LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum: {
-    readonly SimpleCollection: "simple_collection";
+    readonly Collection: "collection";
 };
 export type LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum];
 /**

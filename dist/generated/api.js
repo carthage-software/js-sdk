@@ -52,13 +52,13 @@ exports.LogManagementLogLogEntrySourceResourceTypeEnum = {
     LogEntrySource: 'log_entry_source'
 };
 exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogLogEntryTagResourceTypeEnum = {
     LogEntryTag: 'log_entry_tag'
 };
 exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 /**
  * The order of the logs.
@@ -85,7 +85,7 @@ exports.LogManagementLogLogNamespaceResourceTypeEnum = {
     LogNamespace: 'log_namespace'
 };
 exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogLogResourceTypeEnum = {
     Log: 'log'
@@ -130,31 +130,31 @@ exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = {
     LogEntryFrequencyCount: 'log_entry_frequency_count'
 };
 exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = {
     LogEntrySourceFrequency: 'log_entry_source_frequency'
 };
 exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = {
     LogEntryTagDistribution: 'log_entry_tag_distribution'
 };
 exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = {
     LogFrequencyCount: 'log_frequency_count'
 };
 exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = {
     LogLevelStatistics: 'log_level_statistics'
 };
 exports.LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 };
 exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = {
     Debug: 'Debug',

@@ -379,7 +379,7 @@ export interface LogManagementLogLogEntrySourceResourceCollectionResource {
 }
 
 export const LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = typeof LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum];
@@ -431,7 +431,7 @@ export interface LogManagementLogLogEntryTagResourceCollectionResource {
 }
 
 export const LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = typeof LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum];
@@ -514,7 +514,7 @@ export interface LogManagementLogLogNamespaceResourceCollectionResource {
 }
 
 export const LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = typeof LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum];
@@ -771,7 +771,7 @@ export interface LogManagementLogStatisticsLogEntryFrequencyCountResourceCollect
 }
 
 export const LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum];
@@ -835,7 +835,7 @@ export interface LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollec
 }
 
 export const LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum];
@@ -893,7 +893,7 @@ export interface LogManagementLogStatisticsLogEntryTagDistributionResourceCollec
 }
 
 export const LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum];
@@ -951,7 +951,7 @@ export interface LogManagementLogStatisticsLogFrequencyCountResourceCollectionRe
 }
 
 export const LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum];
@@ -1015,7 +1015,7 @@ export interface LogManagementLogStatisticsLogLevelStatisticsResourceCollectionR
 }
 
 export const LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = {
-    SimpleCollection: 'simple_collection'
+    Collection: 'collection'
 } as const;
 
 export type LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum];
