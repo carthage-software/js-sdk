@@ -1078,17 +1078,17 @@ export interface SharedPingResource {
      */
     'type': SharedPingResourceTypeEnum;
     /**
-     * A random quote from Hannibal, The Carthaginian General.
-     * @type {string}
-     * @memberof SharedPingResource
-     */
-    'quote'?: string;
-    /**
      * The date and time
      * @type {string}
      * @memberof SharedPingResource
      */
     'time': string;
+    /**
+     * A random quote from Hannibal, The Carthaginian General.
+     * @type {string}
+     * @memberof SharedPingResource
+     */
+    'quote': string;
 }
 
 export const SharedPingResourceTypeEnum = {
