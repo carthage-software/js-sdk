@@ -37,7 +37,7 @@ jobs:
         run: npm install -g @redocly/openapi-cli
 
       - name: Bundle the OpenAPI Specification
-        run: openapi bundle spec/Specification.yaml --ext json -d -o open-api.json
+        run: openapi bundle spec/Specification.yaml --ext json -o open-api.json
         working-directory: server
 
       - name: Generate SDK
