@@ -708,6 +708,18 @@ export interface LogManagementLogStatisticsLogEntryFrequencyCountResourceCollect
      */
     'type': LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum;
     /**
+     * Start date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResource
+     */
+    'from': string;
+    /**
+     * End date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResource
+     */
+    'to': string;
+    /**
      * Array of LogEntryFrequencyCountResource.
      * @type {Array<LogManagementLogStatisticsLogEntryFrequencyCountResource>}
      * @memberof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResource
@@ -715,7 +727,7 @@ export interface LogManagementLogStatisticsLogEntryFrequencyCountResourceCollect
     'items': Array<LogManagementLogStatisticsLogEntryFrequencyCountResource>;
 }
 export declare const LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum: {
-    readonly Collection: "collection";
+    readonly StatisticCollection: "statistic_collection";
 };
 export type LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum];
 /**
@@ -766,6 +778,18 @@ export interface LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollec
      */
     'type': LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum;
     /**
+     * Start date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource
+     */
+    'from': string;
+    /**
+     * End date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource
+     */
+    'to': string;
+    /**
      * Array of LogEntrySourceFrequencyResource.
      * @type {Array<LogManagementLogStatisticsLogEntrySourceFrequencyResource>}
      * @memberof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource
@@ -773,7 +797,7 @@ export interface LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollec
     'items': Array<LogManagementLogStatisticsLogEntrySourceFrequencyResource>;
 }
 export declare const LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum: {
-    readonly Collection: "collection";
+    readonly StatisticCollection: "statistic_collection";
 };
 export type LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum];
 /**
@@ -818,6 +842,18 @@ export interface LogManagementLogStatisticsLogEntryTagDistributionResourceCollec
      */
     'type': LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum;
     /**
+     * Start date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource
+     */
+    'from': string;
+    /**
+     * End date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource
+     */
+    'to': string;
+    /**
      * Array of LogEntryTagDistributionResource.
      * @type {Array<LogManagementLogStatisticsLogEntryTagDistributionResource>}
      * @memberof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource
@@ -825,7 +861,7 @@ export interface LogManagementLogStatisticsLogEntryTagDistributionResourceCollec
     'items': Array<LogManagementLogStatisticsLogEntryTagDistributionResource>;
 }
 export declare const LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum: {
-    readonly Collection: "collection";
+    readonly StatisticCollection: "statistic_collection";
 };
 export type LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum];
 /**
@@ -870,6 +906,18 @@ export interface LogManagementLogStatisticsLogFrequencyCountResourceCollectionRe
      */
     'type': LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum;
     /**
+     * Start date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResource
+     */
+    'from': string;
+    /**
+     * End date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResource
+     */
+    'to': string;
+    /**
      * Array of LogFrequencyCountResource.
      * @type {Array<LogManagementLogStatisticsLogFrequencyCountResource>}
      * @memberof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResource
@@ -877,87 +925,99 @@ export interface LogManagementLogStatisticsLogFrequencyCountResourceCollectionRe
     'items': Array<LogManagementLogStatisticsLogFrequencyCountResource>;
 }
 export declare const LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum: {
-    readonly Collection: "collection";
+    readonly StatisticCollection: "statistic_collection";
 };
 export type LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum];
 /**
  * Resource representing the statistics of logs by level.
  * @export
- * @interface LogManagementLogStatisticsLogLevelStatisticsResource
+ * @interface LogManagementLogStatisticsLogLevelStatisticResource
  */
-export interface LogManagementLogStatisticsLogLevelStatisticsResource {
+export interface LogManagementLogStatisticsLogLevelStatisticResource {
     /**
      * Type identifier for the resource.
      * @type {string}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResource
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResource
      */
-    'type': LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum;
     /**
      *
-     * @type {LogManagementLogStatisticsLogLevelStatisticsResourceLevel}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResource
+     * @type {LogManagementLogStatisticsLogLevelStatisticResourceLevel}
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResource
      */
-    'level': LogManagementLogStatisticsLogLevelStatisticsResourceLevel;
+    'level': LogManagementLogStatisticsLogLevelStatisticResourceLevel;
     /**
      * Count of logs for the specified level.
      * @type {number}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResource
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResource
      */
     'count': number;
     /**
      * Percentage of logs for the specified level.
      * @type {number}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResource
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResource
      */
     'percentage': number;
 }
-export declare const LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum: {
-    readonly LogLevelStatistics: "log_level_statistics";
+export declare const LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum: {
+    readonly LogLevelStatistic: "log_level_statistic";
 };
-export type LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = typeof LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum];
+export type LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum = typeof LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum];
 /**
- * Collection of LogLevelStatisticsResource.
+ * Collection of LogLevelStatisticResource.
  * @export
- * @interface LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource
+ * @interface LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource
  */
-export interface LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource {
+export interface LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource {
     /**
      * Type identifier for the collection.
      * @type {string}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource
      */
-    'type': LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum;
+    'type': LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum;
     /**
-     * Array of LogLevelStatisticsResource.
-     * @type {Array<LogManagementLogStatisticsLogLevelStatisticsResource>}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource
+     * Start date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource
      */
-    'items': Array<LogManagementLogStatisticsLogLevelStatisticsResource>;
+    'from': string;
+    /**
+     * End date for the collection.
+     * @type {string}
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource
+     */
+    'to': string;
+    /**
+     * Array of LogLevelStatisticResource.
+     * @type {Array<LogManagementLogStatisticsLogLevelStatisticResource>}
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource
+     */
+    'items': Array<LogManagementLogStatisticsLogLevelStatisticResource>;
 }
-export declare const LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum: {
-    readonly Collection: "collection";
+export declare const LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum: {
+    readonly StatisticCollection: "statistic_collection";
 };
-export type LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum];
+export type LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum = typeof LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum];
 /**
  * Level associated with the statistics.
  * @export
- * @interface LogManagementLogStatisticsLogLevelStatisticsResourceLevel
+ * @interface LogManagementLogStatisticsLogLevelStatisticResourceLevel
  */
-export interface LogManagementLogStatisticsLogLevelStatisticsResourceLevel {
+export interface LogManagementLogStatisticsLogLevelStatisticResourceLevel {
     /**
      * Name of the level.
      * @type {string}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResourceLevel
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResourceLevel
      */
-    'name': LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum;
+    'name': LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum;
     /**
      * Value of the level.
      * @type {number}
-     * @memberof LogManagementLogStatisticsLogLevelStatisticsResourceLevel
+     * @memberof LogManagementLogStatisticsLogLevelStatisticResourceLevel
      */
-    'value': LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum;
+    'value': LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum;
 }
-export declare const LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum: {
+export declare const LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum: {
     readonly Debug: "Debug";
     readonly Info: "Info";
     readonly Notice: "Notice";
@@ -967,8 +1027,8 @@ export declare const LogManagementLogStatisticsLogLevelStatisticsResourceLevelNa
     readonly Alert: "Alert";
     readonly Emergency: "Emergency";
 };
-export type LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = typeof LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum];
-export declare const LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum: {
+export type LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum = typeof LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum];
+export declare const LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum: {
     readonly NUMBER_100: 100;
     readonly NUMBER_200: 200;
     readonly NUMBER_250: 250;
@@ -978,7 +1038,7 @@ export declare const LogManagementLogStatisticsLogLevelStatisticsResourceLevelVa
     readonly NUMBER_550: 550;
     readonly NUMBER_600: 600;
 };
-export type LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum = typeof LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum];
+export type LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum = typeof LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum[keyof typeof LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum];
 /**
  * Resource representing the ping
  * @export
@@ -1112,10 +1172,12 @@ export declare const LogManagementApiAxiosParamCreator: (configuration?: Configu
      * Get the frequency count of log entries.
      * @summary Get Log Entry Frequency Count
      * @param {LogManagementLogStatisticsFrequency} frequency
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryFrequencyCountCollection: (frequency: LogManagementLogStatisticsFrequency, options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogEntryFrequencyCountCollection: (frequency: LogManagementLogStatisticsFrequency, from: string, to: string, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Retrieve a collection of log entry sources.
      * @summary Get Log Entry Source Collection
@@ -1126,10 +1188,12 @@ export declare const LogManagementApiAxiosParamCreator: (configuration?: Configu
     /**
      * Get the frequency count of log entry sources.
      * @summary Get Log Entry Source Frequency
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntrySourceFrequencyCollection: (options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogEntrySourceFrequencyCollection: (from: string, to: string, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Retrieve a collection of log entry tags.
      * @summary Get Log Entry Tag Collection
@@ -1140,25 +1204,31 @@ export declare const LogManagementApiAxiosParamCreator: (configuration?: Configu
     /**
      * Get the distribution of log entry tags.
      * @summary Get Log Entry Tag Distribution
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryTagDistributionCollection: (options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogEntryTagDistributionCollection: (from: string, to: string, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Get the frequency count of logs.
      * @summary Get Log Frequency Count
      * @param {LogManagementLogStatisticsFrequency} frequency
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogFrequencyCountCollection: (frequency: LogManagementLogStatisticsFrequency, options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogFrequencyCountCollection: (frequency: LogManagementLogStatisticsFrequency, from: string, to: string, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Get the statistics of log levels.
      * @summary Get Log Level Statistics
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogLevelStatisticsCollection: (options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogLevelStatisticCollection: (from: string, to: string, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Retrieve a collection of log namespaces.
      * @summary Get Log Namespace Collection
@@ -1271,10 +1341,12 @@ export declare const LogManagementApiFp: (configuration?: Configuration) => {
      * Get the frequency count of log entries.
      * @summary Get Log Entry Frequency Count
      * @param {LogManagementLogStatisticsFrequency} frequency
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryFrequencyCountCollection(frequency: LogManagementLogStatisticsFrequency, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResource>>;
+    logManagementGetLogEntryFrequencyCountCollection(frequency: LogManagementLogStatisticsFrequency, from: string, to: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResource>>;
     /**
      * Retrieve a collection of log entry sources.
      * @summary Get Log Entry Source Collection
@@ -1285,10 +1357,12 @@ export declare const LogManagementApiFp: (configuration?: Configuration) => {
     /**
      * Get the frequency count of log entry sources.
      * @summary Get Log Entry Source Frequency
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntrySourceFrequencyCollection(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource>>;
+    logManagementGetLogEntrySourceFrequencyCollection(from: string, to: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource>>;
     /**
      * Retrieve a collection of log entry tags.
      * @summary Get Log Entry Tag Collection
@@ -1299,25 +1373,31 @@ export declare const LogManagementApiFp: (configuration?: Configuration) => {
     /**
      * Get the distribution of log entry tags.
      * @summary Get Log Entry Tag Distribution
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryTagDistributionCollection(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource>>;
+    logManagementGetLogEntryTagDistributionCollection(from: string, to: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource>>;
     /**
      * Get the frequency count of logs.
      * @summary Get Log Frequency Count
      * @param {LogManagementLogStatisticsFrequency} frequency
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogFrequencyCountCollection(frequency: LogManagementLogStatisticsFrequency, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogFrequencyCountResourceCollectionResource>>;
+    logManagementGetLogFrequencyCountCollection(frequency: LogManagementLogStatisticsFrequency, from: string, to: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogFrequencyCountResourceCollectionResource>>;
     /**
      * Get the statistics of log levels.
      * @summary Get Log Level Statistics
+     * @param {string} from
+     * @param {string} to
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogLevelStatisticsCollection(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource>>;
+    logManagementGetLogLevelStatisticCollection(from: string, to: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource>>;
     /**
      * Retrieve a collection of log namespaces.
      * @summary Get Log Namespace Collection
@@ -1429,10 +1509,11 @@ export declare const LogManagementApiFactory: (configuration?: Configuration, ba
     /**
      * Get the frequency count of log entry sources.
      * @summary Get Log Entry Source Frequency
+     * @param {LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntrySourceFrequencyCollection(options?: AxiosRequestConfig): AxiosPromise<LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource>;
+    logManagementGetLogEntrySourceFrequencyCollection(requestParameters: LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest, options?: AxiosRequestConfig): AxiosPromise<LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource>;
     /**
      * Retrieve a collection of log entry tags.
      * @summary Get Log Entry Tag Collection
@@ -1443,10 +1524,11 @@ export declare const LogManagementApiFactory: (configuration?: Configuration, ba
     /**
      * Get the distribution of log entry tags.
      * @summary Get Log Entry Tag Distribution
+     * @param {LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryTagDistributionCollection(options?: AxiosRequestConfig): AxiosPromise<LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource>;
+    logManagementGetLogEntryTagDistributionCollection(requestParameters: LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest, options?: AxiosRequestConfig): AxiosPromise<LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource>;
     /**
      * Get the frequency count of logs.
      * @summary Get Log Frequency Count
@@ -1458,10 +1540,11 @@ export declare const LogManagementApiFactory: (configuration?: Configuration, ba
     /**
      * Get the statistics of log levels.
      * @summary Get Log Level Statistics
+     * @param {LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogLevelStatisticsCollection(options?: AxiosRequestConfig): AxiosPromise<LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource>;
+    logManagementGetLogLevelStatisticCollection(requestParameters: LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest, options?: AxiosRequestConfig): AxiosPromise<LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource>;
     /**
      * Retrieve a collection of log namespaces.
      * @summary Get Log Namespace Collection
@@ -1692,6 +1775,56 @@ export interface LogManagementApiLogManagementGetLogEntryFrequencyCountCollectio
      * @memberof LogManagementApiLogManagementGetLogEntryFrequencyCountCollection
      */
     readonly frequency: LogManagementLogStatisticsFrequency;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogEntryFrequencyCountCollection
+     */
+    readonly from: string;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogEntryFrequencyCountCollection
+     */
+    readonly to: string;
+}
+/**
+ * Request parameters for logManagementGetLogEntrySourceFrequencyCollection operation in LogManagementApi.
+ * @export
+ * @interface LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest
+ */
+export interface LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest {
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogEntrySourceFrequencyCollection
+     */
+    readonly from: string;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogEntrySourceFrequencyCollection
+     */
+    readonly to: string;
+}
+/**
+ * Request parameters for logManagementGetLogEntryTagDistributionCollection operation in LogManagementApi.
+ * @export
+ * @interface LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest
+ */
+export interface LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest {
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogEntryTagDistributionCollection
+     */
+    readonly from: string;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogEntryTagDistributionCollection
+     */
+    readonly to: string;
 }
 /**
  * Request parameters for logManagementGetLogFrequencyCountCollection operation in LogManagementApi.
@@ -1705,6 +1838,37 @@ export interface LogManagementApiLogManagementGetLogFrequencyCountCollectionRequ
      * @memberof LogManagementApiLogManagementGetLogFrequencyCountCollection
      */
     readonly frequency: LogManagementLogStatisticsFrequency;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogFrequencyCountCollection
+     */
+    readonly from: string;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogFrequencyCountCollection
+     */
+    readonly to: string;
+}
+/**
+ * Request parameters for logManagementGetLogLevelStatisticCollection operation in LogManagementApi.
+ * @export
+ * @interface LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest
+ */
+export interface LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest {
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogLevelStatisticCollection
+     */
+    readonly from: string;
+    /**
+     *
+     * @type {string}
+     * @memberof LogManagementApiLogManagementGetLogLevelStatisticCollection
+     */
+    readonly to: string;
 }
 /**
  * LogManagementApi - object-oriented interface
@@ -1823,11 +1987,12 @@ export declare class LogManagementApi extends BaseAPI {
     /**
      * Get the frequency count of log entry sources.
      * @summary Get Log Entry Source Frequency
+     * @param {LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LogManagementApi
      */
-    logManagementGetLogEntrySourceFrequencyCollection(options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource, any>>;
+    logManagementGetLogEntrySourceFrequencyCollection(requestParameters: LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest, options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResource, any>>;
     /**
      * Retrieve a collection of log entry tags.
      * @summary Get Log Entry Tag Collection
@@ -1839,11 +2004,12 @@ export declare class LogManagementApi extends BaseAPI {
     /**
      * Get the distribution of log entry tags.
      * @summary Get Log Entry Tag Distribution
+     * @param {LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LogManagementApi
      */
-    logManagementGetLogEntryTagDistributionCollection(options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource, any>>;
+    logManagementGetLogEntryTagDistributionCollection(requestParameters: LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest, options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResource, any>>;
     /**
      * Get the frequency count of logs.
      * @summary Get Log Frequency Count
@@ -1856,11 +2022,12 @@ export declare class LogManagementApi extends BaseAPI {
     /**
      * Get the statistics of log levels.
      * @summary Get Log Level Statistics
+     * @param {LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LogManagementApi
      */
-    logManagementGetLogLevelStatisticsCollection(options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResource, any>>;
+    logManagementGetLogLevelStatisticCollection(requestParameters: LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest, options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogStatisticsLogLevelStatisticResourceCollectionResource, any>>;
     /**
      * Retrieve a collection of log namespaces.
      * @summary Get Log Namespace Collection

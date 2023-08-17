@@ -16,7 +16,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SharedApi = exports.SharedApiFactory = exports.SharedApiFp = exports.SharedApiAxiosParamCreator = exports.LogManagementApi = exports.LogManagementApiFactory = exports.LogManagementApiFp = exports.LogManagementApiAxiosParamCreator = exports.SharedPingResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsFrequency = exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogResourceLevelValueEnum = exports.LogManagementLogLogResourceLevelNameEnum = exports.LogManagementLogLogResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceTypeEnum = exports.LogManagementLogLogFilterSortBy = exports.LogManagementLogLogFilterOrder = exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntryTagResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceTypeEnum = exports.LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogEntryResourceTypeEnum = exports.LogManagementLogLogEntryFilterOrder = exports.LogManagementLogCreateLogLevelEnum = void 0;
+exports.SharedApi = exports.SharedApiFactory = exports.SharedApiFp = exports.SharedApiAxiosParamCreator = exports.LogManagementApi = exports.LogManagementApiFactory = exports.LogManagementApiFp = exports.LogManagementApiAxiosParamCreator = exports.SharedPingResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsFrequency = exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogResourceLevelValueEnum = exports.LogManagementLogLogResourceLevelNameEnum = exports.LogManagementLogLogResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceTypeEnum = exports.LogManagementLogLogFilterSortBy = exports.LogManagementLogLogFilterOrder = exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntryTagResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceTypeEnum = exports.LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogEntryResourceTypeEnum = exports.LogManagementLogLogEntryFilterOrder = exports.LogManagementLogCreateLogLevelEnum = void 0;
 const axios_1 = __importDefault(require("axios"));
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -130,33 +130,33 @@ exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = {
     LogEntryFrequencyCount: 'log_entry_frequency_count'
 };
 exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = {
-    Collection: 'collection'
+    StatisticCollection: 'statistic_collection'
 };
 exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = {
     LogEntrySourceFrequency: 'log_entry_source_frequency'
 };
 exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = {
-    Collection: 'collection'
+    StatisticCollection: 'statistic_collection'
 };
 exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = {
     LogEntryTagDistribution: 'log_entry_tag_distribution'
 };
 exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = {
-    Collection: 'collection'
+    StatisticCollection: 'statistic_collection'
 };
 exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = {
     LogFrequencyCount: 'log_frequency_count'
 };
 exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = {
-    Collection: 'collection'
+    StatisticCollection: 'statistic_collection'
 };
-exports.LogManagementLogStatisticsLogLevelStatisticsResourceTypeEnum = {
-    LogLevelStatistics: 'log_level_statistics'
+exports.LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum = {
+    LogLevelStatistic: 'log_level_statistic'
 };
-exports.LogManagementLogStatisticsLogLevelStatisticsResourceCollectionResourceTypeEnum = {
-    Collection: 'collection'
+exports.LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum = {
+    StatisticCollection: 'statistic_collection'
 };
-exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = {
+exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum = {
     Debug: 'Debug',
     Info: 'Info',
     Notice: 'Notice',
@@ -166,7 +166,7 @@ exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelNameEnum = {
     Alert: 'Alert',
     Emergency: 'Emergency'
 };
-exports.LogManagementLogStatisticsLogLevelStatisticsResourceLevelValueEnum = {
+exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum = {
     NUMBER_100: 100,
     NUMBER_200: 200,
     NUMBER_250: 250,
@@ -535,14 +535,22 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
          * Get the frequency count of log entries.
          * @summary Get Log Entry Frequency Count
          * @param {LogManagementLogStatisticsFrequency} frequency
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogEntryFrequencyCountCollection: async (frequency, options = {}) => {
+        logManagementGetLogEntryFrequencyCountCollection: async (frequency, from, to, options = {}) => {
             // verify required parameter 'frequency' is not null or undefined
             (0, common_1.assertParamExists)('logManagementGetLogEntryFrequencyCountCollection', 'frequency', frequency);
-            const localVarPath = `/log-management/log/statistic/entry-frequency-count/{frequency}`
-                .replace(`{${"frequency"}}`, encodeURIComponent(String(frequency)));
+            // verify required parameter 'from' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogEntryFrequencyCountCollection', 'from', from);
+            // verify required parameter 'to' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogEntryFrequencyCountCollection', 'to', to);
+            const localVarPath = `/log-management/log/statistic/entry-frequency-count/{frequency}/from/{from}/to/{to}`
+                .replace(`{${"frequency"}}`, encodeURIComponent(String(frequency)))
+                .replace(`{${"from"}}`, encodeURIComponent(String(from)))
+                .replace(`{${"to"}}`, encodeURIComponent(String(to)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
             let baseOptions;
@@ -588,11 +596,19 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Get the frequency count of log entry sources.
          * @summary Get Log Entry Source Frequency
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogEntrySourceFrequencyCollection: async (options = {}) => {
-            const localVarPath = `/log-management/log/statistic/entry-source-frequency`;
+        logManagementGetLogEntrySourceFrequencyCollection: async (from, to, options = {}) => {
+            // verify required parameter 'from' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogEntrySourceFrequencyCollection', 'from', from);
+            // verify required parameter 'to' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogEntrySourceFrequencyCollection', 'to', to);
+            const localVarPath = `/log-management/log/statistic/entry-source-frequency/from/{from}/to/{to}`
+                .replace(`{${"from"}}`, encodeURIComponent(String(from)))
+                .replace(`{${"to"}}`, encodeURIComponent(String(to)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
             let baseOptions;
@@ -638,11 +654,19 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Get the distribution of log entry tags.
          * @summary Get Log Entry Tag Distribution
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogEntryTagDistributionCollection: async (options = {}) => {
-            const localVarPath = `/log-management/log/statistic/entry-tag-distribution`;
+        logManagementGetLogEntryTagDistributionCollection: async (from, to, options = {}) => {
+            // verify required parameter 'from' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogEntryTagDistributionCollection', 'from', from);
+            // verify required parameter 'to' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogEntryTagDistributionCollection', 'to', to);
+            const localVarPath = `/log-management/log/statistic/entry-tag-distribution/from/{from}/to/{to}`
+                .replace(`{${"from"}}`, encodeURIComponent(String(from)))
+                .replace(`{${"to"}}`, encodeURIComponent(String(to)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
             let baseOptions;
@@ -664,14 +688,22 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
          * Get the frequency count of logs.
          * @summary Get Log Frequency Count
          * @param {LogManagementLogStatisticsFrequency} frequency
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogFrequencyCountCollection: async (frequency, options = {}) => {
+        logManagementGetLogFrequencyCountCollection: async (frequency, from, to, options = {}) => {
             // verify required parameter 'frequency' is not null or undefined
             (0, common_1.assertParamExists)('logManagementGetLogFrequencyCountCollection', 'frequency', frequency);
-            const localVarPath = `/log-management/log/statistic/frequency-count/{frequency}`
-                .replace(`{${"frequency"}}`, encodeURIComponent(String(frequency)));
+            // verify required parameter 'from' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogFrequencyCountCollection', 'from', from);
+            // verify required parameter 'to' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogFrequencyCountCollection', 'to', to);
+            const localVarPath = `/log-management/log/statistic/frequency-count/{frequency}/from/{from}/to/{to}`
+                .replace(`{${"frequency"}}`, encodeURIComponent(String(frequency)))
+                .replace(`{${"from"}}`, encodeURIComponent(String(from)))
+                .replace(`{${"to"}}`, encodeURIComponent(String(to)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
             let baseOptions;
@@ -692,11 +724,19 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Get the statistics of log levels.
          * @summary Get Log Level Statistics
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogLevelStatisticsCollection: async (options = {}) => {
-            const localVarPath = `/log-management/log/statistic/level-statistics`;
+        logManagementGetLogLevelStatisticCollection: async (from, to, options = {}) => {
+            // verify required parameter 'from' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogLevelStatisticCollection', 'from', from);
+            // verify required parameter 'to' is not null or undefined
+            (0, common_1.assertParamExists)('logManagementGetLogLevelStatisticCollection', 'to', to);
+            const localVarPath = `/log-management/log/statistic/level-statistics/from/{from}/to/{to}`
+                .replace(`{${"from"}}`, encodeURIComponent(String(from)))
+                .replace(`{${"to"}}`, encodeURIComponent(String(to)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, common_1.DUMMY_BASE_URL);
             let baseOptions;
@@ -876,11 +916,13 @@ const LogManagementApiFp = function (configuration) {
          * Get the frequency count of log entries.
          * @summary Get Log Entry Frequency Count
          * @param {LogManagementLogStatisticsFrequency} frequency
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogEntryFrequencyCountCollection(frequency, options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntryFrequencyCountCollection(frequency, options);
+        async logManagementGetLogEntryFrequencyCountCollection(frequency, from, to, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntryFrequencyCountCollection(frequency, from, to, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
@@ -896,11 +938,13 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Get the frequency count of log entry sources.
          * @summary Get Log Entry Source Frequency
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogEntrySourceFrequencyCollection(options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntrySourceFrequencyCollection(options);
+        async logManagementGetLogEntrySourceFrequencyCollection(from, to, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntrySourceFrequencyCollection(from, to, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
@@ -916,32 +960,38 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Get the distribution of log entry tags.
          * @summary Get Log Entry Tag Distribution
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogEntryTagDistributionCollection(options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntryTagDistributionCollection(options);
+        async logManagementGetLogEntryTagDistributionCollection(from, to, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntryTagDistributionCollection(from, to, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
          * Get the frequency count of logs.
          * @summary Get Log Frequency Count
          * @param {LogManagementLogStatisticsFrequency} frequency
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogFrequencyCountCollection(frequency, options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogFrequencyCountCollection(frequency, options);
+        async logManagementGetLogFrequencyCountCollection(frequency, from, to, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogFrequencyCountCollection(frequency, from, to, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
          * Get the statistics of log levels.
          * @summary Get Log Level Statistics
+         * @param {string} from
+         * @param {string} to
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogLevelStatisticsCollection(options) {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogLevelStatisticsCollection(options);
+        async logManagementGetLogLevelStatisticCollection(from, to, options) {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogLevelStatisticCollection(from, to, options);
             return (0, common_1.createRequestFunction)(localVarAxiosArgs, axios_1.default, base_1.BASE_PATH, configuration);
         },
         /**
@@ -1072,7 +1122,7 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
          * @throws {RequiredError}
          */
         logManagementGetLogEntryFrequencyCountCollection(requestParameters, options) {
-            return localVarFp.logManagementGetLogEntryFrequencyCountCollection(requestParameters.frequency, options).then((request) => request(axios, basePath));
+            return localVarFp.logManagementGetLogEntryFrequencyCountCollection(requestParameters.frequency, requestParameters.from, requestParameters.to, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a collection of log entry sources.
@@ -1086,11 +1136,12 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
         /**
          * Get the frequency count of log entry sources.
          * @summary Get Log Entry Source Frequency
+         * @param {LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogEntrySourceFrequencyCollection(options) {
-            return localVarFp.logManagementGetLogEntrySourceFrequencyCollection(options).then((request) => request(axios, basePath));
+        logManagementGetLogEntrySourceFrequencyCollection(requestParameters, options) {
+            return localVarFp.logManagementGetLogEntrySourceFrequencyCollection(requestParameters.from, requestParameters.to, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a collection of log entry tags.
@@ -1104,11 +1155,12 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
         /**
          * Get the distribution of log entry tags.
          * @summary Get Log Entry Tag Distribution
+         * @param {LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogEntryTagDistributionCollection(options) {
-            return localVarFp.logManagementGetLogEntryTagDistributionCollection(options).then((request) => request(axios, basePath));
+        logManagementGetLogEntryTagDistributionCollection(requestParameters, options) {
+            return localVarFp.logManagementGetLogEntryTagDistributionCollection(requestParameters.from, requestParameters.to, options).then((request) => request(axios, basePath));
         },
         /**
          * Get the frequency count of logs.
@@ -1118,16 +1170,17 @@ const LogManagementApiFactory = function (configuration, basePath, axios) {
          * @throws {RequiredError}
          */
         logManagementGetLogFrequencyCountCollection(requestParameters, options) {
-            return localVarFp.logManagementGetLogFrequencyCountCollection(requestParameters.frequency, options).then((request) => request(axios, basePath));
+            return localVarFp.logManagementGetLogFrequencyCountCollection(requestParameters.frequency, requestParameters.from, requestParameters.to, options).then((request) => request(axios, basePath));
         },
         /**
          * Get the statistics of log levels.
          * @summary Get Log Level Statistics
+         * @param {LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogLevelStatisticsCollection(options) {
-            return localVarFp.logManagementGetLogLevelStatisticsCollection(options).then((request) => request(axios, basePath));
+        logManagementGetLogLevelStatisticCollection(requestParameters, options) {
+            return localVarFp.logManagementGetLogLevelStatisticCollection(requestParameters.from, requestParameters.to, options).then((request) => request(axios, basePath));
         },
         /**
          * Retrieve a collection of log namespaces.
@@ -1267,7 +1320,7 @@ class LogManagementApi extends base_1.BaseAPI {
      * @memberof LogManagementApi
      */
     logManagementGetLogEntryFrequencyCountCollection(requestParameters, options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogEntryFrequencyCountCollection(requestParameters.frequency, options).then((request) => request(this.axios, this.basePath));
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogEntryFrequencyCountCollection(requestParameters.frequency, requestParameters.from, requestParameters.to, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Retrieve a collection of log entry sources.
@@ -1282,12 +1335,13 @@ class LogManagementApi extends base_1.BaseAPI {
     /**
      * Get the frequency count of log entry sources.
      * @summary Get Log Entry Source Frequency
+     * @param {LogManagementApiLogManagementGetLogEntrySourceFrequencyCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LogManagementApi
      */
-    logManagementGetLogEntrySourceFrequencyCollection(options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogEntrySourceFrequencyCollection(options).then((request) => request(this.axios, this.basePath));
+    logManagementGetLogEntrySourceFrequencyCollection(requestParameters, options) {
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogEntrySourceFrequencyCollection(requestParameters.from, requestParameters.to, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Retrieve a collection of log entry tags.
@@ -1302,12 +1356,13 @@ class LogManagementApi extends base_1.BaseAPI {
     /**
      * Get the distribution of log entry tags.
      * @summary Get Log Entry Tag Distribution
+     * @param {LogManagementApiLogManagementGetLogEntryTagDistributionCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LogManagementApi
      */
-    logManagementGetLogEntryTagDistributionCollection(options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogEntryTagDistributionCollection(options).then((request) => request(this.axios, this.basePath));
+    logManagementGetLogEntryTagDistributionCollection(requestParameters, options) {
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogEntryTagDistributionCollection(requestParameters.from, requestParameters.to, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Get the frequency count of logs.
@@ -1318,17 +1373,18 @@ class LogManagementApi extends base_1.BaseAPI {
      * @memberof LogManagementApi
      */
     logManagementGetLogFrequencyCountCollection(requestParameters, options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogFrequencyCountCollection(requestParameters.frequency, options).then((request) => request(this.axios, this.basePath));
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogFrequencyCountCollection(requestParameters.frequency, requestParameters.from, requestParameters.to, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Get the statistics of log levels.
      * @summary Get Log Level Statistics
+     * @param {LogManagementApiLogManagementGetLogLevelStatisticCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LogManagementApi
      */
-    logManagementGetLogLevelStatisticsCollection(options) {
-        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogLevelStatisticsCollection(options).then((request) => request(this.axios, this.basePath));
+    logManagementGetLogLevelStatisticCollection(requestParameters, options) {
+        return (0, exports.LogManagementApiFp)(this.configuration).logManagementGetLogLevelStatisticCollection(requestParameters.from, requestParameters.to, options).then((request) => request(this.axios, this.basePath));
     }
     /**
      * Retrieve a collection of log namespaces.
