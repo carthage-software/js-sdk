@@ -16,7 +16,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.SharedApi = exports.SharedApiFactory = exports.SharedApiFp = exports.SharedApiAxiosParamCreator = exports.LogManagementApi = exports.LogManagementApiFactory = exports.LogManagementApiFp = exports.LogManagementApiAxiosParamCreator = exports.SharedPingResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsFrequency = exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogResourceLevelValueEnum = exports.LogManagementLogLogResourceLevelNameEnum = exports.LogManagementLogLogResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceTypeEnum = exports.LogManagementLogLogFilterSortBy = exports.LogManagementLogLogFilterOrder = exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntryTagResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceTypeEnum = exports.LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogEntryResourceTypeEnum = exports.LogManagementLogLogEntryFilterOrder = exports.LogManagementLogCreateLogLevelEnum = void 0;
+exports.SharedApi = exports.SharedApiFactory = exports.SharedApiFp = exports.SharedApiAxiosParamCreator = exports.LogManagementGetLogCollectionLevelsEnum = exports.LogManagementApi = exports.LogManagementApiFactory = exports.LogManagementApiFp = exports.LogManagementApiAxiosParamCreator = exports.SharedPingResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelValueEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceLevelNameEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogLevelStatisticResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryTagDistributionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntrySourceFrequencyResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceCollectionResourceTypeEnum = exports.LogManagementLogStatisticsLogEntryFrequencyCountResourceTypeEnum = exports.LogManagementLogStatisticsFrequency = exports.LogManagementLogLogResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogResourceLevelValueEnum = exports.LogManagementLogLogResourceLevelNameEnum = exports.LogManagementLogLogResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogNamespaceResourceTypeEnum = exports.LogManagementLogLogFilterSortBy = exports.LogManagementLogLogFilterOrder = exports.LogManagementLogLogEntryTagResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntryTagResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceCollectionResourceTypeEnum = exports.LogManagementLogLogEntrySourceResourceTypeEnum = exports.LogManagementLogLogEntryResourcePaginatedCollectionResourceTypeEnum = exports.LogManagementLogLogEntryResourceTypeEnum = exports.LogManagementLogLogEntryFilterOrder = exports.LogManagementLogCreateLogLevelEnum = void 0;
 const axios_1 = __importDefault(require("axios"));
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -387,10 +387,10 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
         /**
          * Retrieve a collection of logs.
          * @summary Get Log Collection
-         * @param {string} [contains]
-         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
-         * @param {string} [from]
-         * @param {string} [to]
+         * @param {string | null} [contains]
+         * @param {Array<LogManagementGetLogCollectionLevelsEnum>} [levels]
+         * @param {string | null} [from]
+         * @param {string | null} [to]
          * @param {LogManagementLogLogFilterSortBy} [sortBy]
          * @param {LogManagementLogLogFilterOrder} [order]
          * @param {number} [page] The page number for pagination. Defaults to 1.
@@ -479,11 +479,11 @@ const LogManagementApiAxiosParamCreator = function (configuration) {
          * @summary Get Log Entry Collection
          * @param {number} [page] The page number for pagination. Defaults to 1.
          * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-         * @param {string} [logIdentity]
-         * @param {string} [before]
-         * @param {string} [after]
+         * @param {string | null} [logIdentity]
+         * @param {string | null} [before]
+         * @param {string | null} [after]
          * @param {LogManagementLogLogEntryFilterOrder} [order]
-         * @param {string} [source]
+         * @param {string | null} [source]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -869,10 +869,10 @@ const LogManagementApiFp = function (configuration) {
         /**
          * Retrieve a collection of logs.
          * @summary Get Log Collection
-         * @param {string} [contains]
-         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
-         * @param {string} [from]
-         * @param {string} [to]
+         * @param {string | null} [contains]
+         * @param {Array<LogManagementGetLogCollectionLevelsEnum>} [levels]
+         * @param {string | null} [from]
+         * @param {string | null} [to]
          * @param {LogManagementLogLogFilterSortBy} [sortBy]
          * @param {LogManagementLogLogFilterOrder} [order]
          * @param {number} [page] The page number for pagination. Defaults to 1.
@@ -900,11 +900,11 @@ const LogManagementApiFp = function (configuration) {
          * @summary Get Log Entry Collection
          * @param {number} [page] The page number for pagination. Defaults to 1.
          * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-         * @param {string} [logIdentity]
-         * @param {string} [before]
-         * @param {string} [after]
+         * @param {string | null} [logIdentity]
+         * @param {string | null} [before]
+         * @param {string | null} [after]
          * @param {LogManagementLogLogEntryFilterOrder} [order]
-         * @param {string} [source]
+         * @param {string | null} [source]
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1398,6 +1398,19 @@ class LogManagementApi extends base_1.BaseAPI {
     }
 }
 exports.LogManagementApi = LogManagementApi;
+/**
+ * @export
+ */
+exports.LogManagementGetLogCollectionLevelsEnum = {
+    NUMBER_100: 100,
+    NUMBER_200: 200,
+    NUMBER_250: 250,
+    NUMBER_300: 300,
+    NUMBER_400: 400,
+    NUMBER_500: 500,
+    NUMBER_550: 550,
+    NUMBER_600: 600
+};
 /**
  * SharedApi - axios parameter creator
  * @export

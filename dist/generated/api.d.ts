@@ -1134,10 +1134,10 @@ export declare const LogManagementApiAxiosParamCreator: (configuration?: Configu
     /**
      * Retrieve a collection of logs.
      * @summary Get Log Collection
-     * @param {string} [contains]
-     * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
-     * @param {string} [from]
-     * @param {string} [to]
+     * @param {string | null} [contains]
+     * @param {Array<LogManagementGetLogCollectionLevelsEnum>} [levels]
+     * @param {string | null} [from]
+     * @param {string | null} [to]
      * @param {LogManagementLogLogFilterSortBy} [sortBy]
      * @param {LogManagementLogLogFilterOrder} [order]
      * @param {number} [page] The page number for pagination. Defaults to 1.
@@ -1145,7 +1145,7 @@ export declare const LogManagementApiAxiosParamCreator: (configuration?: Configu
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogCollection: (contains?: string, levels?: Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>, from?: string, to?: string, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogCollection: (contains?: string | null, levels?: Array<LogManagementGetLogCollectionLevelsEnum>, from?: string | null, to?: string | null, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Get a log entry by its identity.
      * @summary Get Log Entry
@@ -1159,15 +1159,15 @@ export declare const LogManagementApiAxiosParamCreator: (configuration?: Configu
      * @summary Get Log Entry Collection
      * @param {number} [page] The page number for pagination. Defaults to 1.
      * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-     * @param {string} [logIdentity]
-     * @param {string} [before]
-     * @param {string} [after]
+     * @param {string | null} [logIdentity]
+     * @param {string | null} [before]
+     * @param {string | null} [after]
      * @param {LogManagementLogLogEntryFilterOrder} [order]
-     * @param {string} [source]
+     * @param {string | null} [source]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryCollection: (page?: number, itemsPerPage?: number, logIdentity?: string, before?: string, after?: string, order?: LogManagementLogLogEntryFilterOrder, source?: string, options?: AxiosRequestConfig) => Promise<RequestArgs>;
+    logManagementGetLogEntryCollection: (page?: number, itemsPerPage?: number, logIdentity?: string | null, before?: string | null, after?: string | null, order?: LogManagementLogLogEntryFilterOrder, source?: string | null, options?: AxiosRequestConfig) => Promise<RequestArgs>;
     /**
      * Get the frequency count of log entries.
      * @summary Get Log Entry Frequency Count
@@ -1303,10 +1303,10 @@ export declare const LogManagementApiFp: (configuration?: Configuration) => {
     /**
      * Retrieve a collection of logs.
      * @summary Get Log Collection
-     * @param {string} [contains]
-     * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels]
-     * @param {string} [from]
-     * @param {string} [to]
+     * @param {string | null} [contains]
+     * @param {Array<LogManagementGetLogCollectionLevelsEnum>} [levels]
+     * @param {string | null} [from]
+     * @param {string | null} [to]
      * @param {LogManagementLogLogFilterSortBy} [sortBy]
      * @param {LogManagementLogLogFilterOrder} [order]
      * @param {number} [page] The page number for pagination. Defaults to 1.
@@ -1314,7 +1314,7 @@ export declare const LogManagementApiFp: (configuration?: Configuration) => {
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogCollection(contains?: string, levels?: Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>, from?: string, to?: string, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogResourcePaginatedCollectionResource>>;
+    logManagementGetLogCollection(contains?: string | null, levels?: Array<LogManagementGetLogCollectionLevelsEnum>, from?: string | null, to?: string | null, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogResourcePaginatedCollectionResource>>;
     /**
      * Get a log entry by its identity.
      * @summary Get Log Entry
@@ -1328,15 +1328,15 @@ export declare const LogManagementApiFp: (configuration?: Configuration) => {
      * @summary Get Log Entry Collection
      * @param {number} [page] The page number for pagination. Defaults to 1.
      * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-     * @param {string} [logIdentity]
-     * @param {string} [before]
-     * @param {string} [after]
+     * @param {string | null} [logIdentity]
+     * @param {string | null} [before]
+     * @param {string | null} [after]
      * @param {LogManagementLogLogEntryFilterOrder} [order]
-     * @param {string} [source]
+     * @param {string | null} [source]
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    logManagementGetLogEntryCollection(page?: number, itemsPerPage?: number, logIdentity?: string, before?: string, after?: string, order?: LogManagementLogLogEntryFilterOrder, source?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogEntryResourcePaginatedCollectionResource>>;
+    logManagementGetLogEntryCollection(page?: number, itemsPerPage?: number, logIdentity?: string | null, before?: string | null, after?: string | null, order?: LogManagementLogLogEntryFilterOrder, source?: string | null, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogEntryResourcePaginatedCollectionResource>>;
     /**
      * Get the frequency count of log entries.
      * @summary Get Log Entry Frequency Count
@@ -1657,25 +1657,25 @@ export interface LogManagementApiLogManagementGetLogCollectionRequest {
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly contains?: string;
+    readonly contains?: string | null;
     /**
      *
      * @type {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly levels?: Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>;
+    readonly levels?: Array<LogManagementGetLogCollectionLevelsEnum>;
     /**
      *
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly from?: string;
+    readonly from?: string | null;
     /**
      *
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly to?: string;
+    readonly to?: string | null;
     /**
      *
      * @type {LogManagementLogLogFilterSortBy}
@@ -1737,19 +1737,19 @@ export interface LogManagementApiLogManagementGetLogEntryCollectionRequest {
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly logIdentity?: string;
+    readonly logIdentity?: string | null;
     /**
      *
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly before?: string;
+    readonly before?: string | null;
     /**
      *
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly after?: string;
+    readonly after?: string | null;
     /**
      *
      * @type {LogManagementLogLogEntryFilterOrder}
@@ -1761,7 +1761,7 @@ export interface LogManagementApiLogManagementGetLogEntryCollectionRequest {
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly source?: string;
+    readonly source?: string | null;
 }
 /**
  * Request parameters for logManagementGetLogEntryFrequencyCountCollection operation in LogManagementApi.
@@ -2037,6 +2037,20 @@ export declare class LogManagementApi extends BaseAPI {
      */
     logManagementGetLogNamespaceCollection(options?: AxiosRequestConfig): Promise<import("axios").AxiosResponse<LogManagementLogLogNamespaceResourceCollectionResource, any>>;
 }
+/**
+ * @export
+ */
+export declare const LogManagementGetLogCollectionLevelsEnum: {
+    readonly NUMBER_100: 100;
+    readonly NUMBER_200: 200;
+    readonly NUMBER_250: 250;
+    readonly NUMBER_300: 300;
+    readonly NUMBER_400: 400;
+    readonly NUMBER_500: 500;
+    readonly NUMBER_550: 550;
+    readonly NUMBER_600: 600;
+};
+export type LogManagementGetLogCollectionLevelsEnum = typeof LogManagementGetLogCollectionLevelsEnum[keyof typeof LogManagementGetLogCollectionLevelsEnum];
 /**
  * SharedApi - axios parameter creator
  * @export

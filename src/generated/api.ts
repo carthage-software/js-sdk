@@ -1405,10 +1405,10 @@ export const LogManagementApiAxiosParamCreator = function (configuration?: Confi
         /**
          * Retrieve a collection of logs.
          * @summary Get Log Collection
-         * @param {string} [contains] 
-         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels] 
-         * @param {string} [from] 
-         * @param {string} [to] 
+         * @param {string | null} [contains] 
+         * @param {Array<LogManagementGetLogCollectionLevelsEnum>} [levels] 
+         * @param {string | null} [from] 
+         * @param {string | null} [to] 
          * @param {LogManagementLogLogFilterSortBy} [sortBy] 
          * @param {LogManagementLogLogFilterOrder} [order] 
          * @param {number} [page] The page number for pagination. Defaults to 1.
@@ -1416,7 +1416,7 @@ export const LogManagementApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogCollection: async (contains?: string, levels?: Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>, from?: string, to?: string, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        logManagementGetLogCollection: async (contains?: string | null, levels?: Array<LogManagementGetLogCollectionLevelsEnum>, from?: string | null, to?: string | null, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/log-management/log`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1515,15 +1515,15 @@ export const LogManagementApiAxiosParamCreator = function (configuration?: Confi
          * @summary Get Log Entry Collection
          * @param {number} [page] The page number for pagination. Defaults to 1.
          * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-         * @param {string} [logIdentity] 
-         * @param {string} [before] 
-         * @param {string} [after] 
+         * @param {string | null} [logIdentity] 
+         * @param {string | null} [before] 
+         * @param {string | null} [after] 
          * @param {LogManagementLogLogEntryFilterOrder} [order] 
-         * @param {string} [source] 
+         * @param {string | null} [source] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logManagementGetLogEntryCollection: async (page?: number, itemsPerPage?: number, logIdentity?: string, before?: string, after?: string, order?: LogManagementLogLogEntryFilterOrder, source?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        logManagementGetLogEntryCollection: async (page?: number, itemsPerPage?: number, logIdentity?: string | null, before?: string | null, after?: string | null, order?: LogManagementLogLogEntryFilterOrder, source?: string | null, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/log-management/log/entry`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1957,10 +1957,10 @@ export const LogManagementApiFp = function(configuration?: Configuration) {
         /**
          * Retrieve a collection of logs.
          * @summary Get Log Collection
-         * @param {string} [contains] 
-         * @param {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>} [levels] 
-         * @param {string} [from] 
-         * @param {string} [to] 
+         * @param {string | null} [contains] 
+         * @param {Array<LogManagementGetLogCollectionLevelsEnum>} [levels] 
+         * @param {string | null} [from] 
+         * @param {string | null} [to] 
          * @param {LogManagementLogLogFilterSortBy} [sortBy] 
          * @param {LogManagementLogLogFilterOrder} [order] 
          * @param {number} [page] The page number for pagination. Defaults to 1.
@@ -1968,7 +1968,7 @@ export const LogManagementApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogCollection(contains?: string, levels?: Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>, from?: string, to?: string, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogResourcePaginatedCollectionResource>> {
+        async logManagementGetLogCollection(contains?: string | null, levels?: Array<LogManagementGetLogCollectionLevelsEnum>, from?: string | null, to?: string | null, sortBy?: LogManagementLogLogFilterSortBy, order?: LogManagementLogLogFilterOrder, page?: number, itemsPerPage?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogResourcePaginatedCollectionResource>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogCollection(contains, levels, from, to, sortBy, order, page, itemsPerPage, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -1988,15 +1988,15 @@ export const LogManagementApiFp = function(configuration?: Configuration) {
          * @summary Get Log Entry Collection
          * @param {number} [page] The page number for pagination. Defaults to 1.
          * @param {number} [itemsPerPage] The number of items per page for pagination. Defaults to 20, with a maximum of 2000.
-         * @param {string} [logIdentity] 
-         * @param {string} [before] 
-         * @param {string} [after] 
+         * @param {string | null} [logIdentity] 
+         * @param {string | null} [before] 
+         * @param {string | null} [after] 
          * @param {LogManagementLogLogEntryFilterOrder} [order] 
-         * @param {string} [source] 
+         * @param {string | null} [source] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logManagementGetLogEntryCollection(page?: number, itemsPerPage?: number, logIdentity?: string, before?: string, after?: string, order?: LogManagementLogLogEntryFilterOrder, source?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogEntryResourcePaginatedCollectionResource>> {
+        async logManagementGetLogEntryCollection(page?: number, itemsPerPage?: number, logIdentity?: string | null, before?: string | null, after?: string | null, order?: LogManagementLogLogEntryFilterOrder, source?: string | null, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LogManagementLogLogEntryResourcePaginatedCollectionResource>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.logManagementGetLogEntryCollection(page, itemsPerPage, logIdentity, before, after, order, source, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -2391,28 +2391,28 @@ export interface LogManagementApiLogManagementGetLogCollectionRequest {
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly contains?: string
+    readonly contains?: string | null
 
     /**
      * 
      * @type {Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly levels?: Array<100 | 200 | 250 | 300 | 400 | 500 | 550 | 600>
+    readonly levels?: Array<LogManagementGetLogCollectionLevelsEnum>
 
     /**
      * 
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly from?: string
+    readonly from?: string | null
 
     /**
      * 
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogCollection
      */
-    readonly to?: string
+    readonly to?: string | null
 
     /**
      * 
@@ -2482,21 +2482,21 @@ export interface LogManagementApiLogManagementGetLogEntryCollectionRequest {
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly logIdentity?: string
+    readonly logIdentity?: string | null
 
     /**
      * 
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly before?: string
+    readonly before?: string | null
 
     /**
      * 
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly after?: string
+    readonly after?: string | null
 
     /**
      * 
@@ -2510,7 +2510,7 @@ export interface LogManagementApiLogManagementGetLogEntryCollectionRequest {
      * @type {string}
      * @memberof LogManagementApiLogManagementGetLogEntryCollection
      */
-    readonly source?: string
+    readonly source?: string | null
 }
 
 /**
@@ -2853,6 +2853,21 @@ export class LogManagementApi extends BaseAPI {
     }
 }
 
+/**
+ * @export
+ */
+export const LogManagementGetLogCollectionLevelsEnum = {
+    NUMBER_100: 100,
+    NUMBER_200: 200,
+    NUMBER_250: 250,
+    NUMBER_300: 300,
+    NUMBER_400: 400,
+    NUMBER_500: 500,
+    NUMBER_550: 550,
+    NUMBER_600: 600
+} as const;
+export type LogManagementGetLogCollectionLevelsEnum = typeof LogManagementGetLogCollectionLevelsEnum[keyof typeof LogManagementGetLogCollectionLevelsEnum];
+
 
 /**
  * SharedApi - axios parameter creator
@@ -2950,5 +2965,6 @@ export class SharedApi extends BaseAPI {
         return SharedApiFp(this.configuration).ping(options).then((request) => request(this.axios, this.basePath));
     }
 }
+
 
 
